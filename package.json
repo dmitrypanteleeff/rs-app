@@ -10,7 +10,7 @@
     "dev": "gulp",
     "build": "gulp build --build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "firebase deploy"
   },
   "author": "DmitryPanteleeff",
   "license": "ISC",
