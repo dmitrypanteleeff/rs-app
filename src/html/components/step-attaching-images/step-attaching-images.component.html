@@ -1,0 +1,191 @@
+<section class="step-attaching bg-03">
+    <div class="container">
+        <div class="step-attaching__wrapper">
+            <div>
+                @@include('../progress-header/progress-header.component.html', {
+                    'class-wrapper': 'step-attaching__step-progress',
+                    'class-title': 'step-attaching__step-progress-title primary-color',
+                    'title': 'Шаг 3',
+                    'class-subtitle': 'step-attaching__step-progress-subtitle',
+                    'subtitle': 'Прикрепление изображений',
+                    'class-step-progress': '',
+                    'class-step-1': 'active',
+                    'class-step-2': 'active',
+                    'class-step-3': 'active'
+                })
+            </div>
+        </div>
+    </div>
+    <div class="container step-attaching__attach-container">
+        <div class="step-attaching__attach">
+            <h3 class="h2 text-01-color attach__title">
+                Паспорт
+            </h3>
+            <p class="text attach__text">
+                Старайтесь не закрывать пальцами данные и фотографировать при хорошем освещении
+            </p>
+            <div class="step-attaching__grid attach__grid">
+                <div class="attach__card-wrapper">
+                    <input type="file" id="attach__input-file-1" class="attach__input-file" >
+                    <label for="attach__input-file-1" class="attach__input-label">
+                        <div class="attach__card-item">
+                            <div class="attach__img-wrapper">
+                                <img class="attach__img" src="@img/passport-with-photo-img.svg" alt="Разворот паспорта"/>
+                            </div>
+                            <div class="attach__card-info">
+                                <span class="text text-01-color attach__card-info-title">
+                                    Разворот паспорта с фотографией
+                                </span>
+                                <div class="attach__file-attached">
+                                    <span class="small primary-color">
+                                        Загружено
+                                    </span>
+                                    @@include('../../UI/files/button-with-icon.html', {
+                                        'type': 'button',
+                                        'class-btn-wrapper': 'attach__btn-wrapper delete attach__btn-delete-wrapper',
+                                        'class-btn': 'attach__btn',
+                                        'class-text': 'attach__btn-delete-text',
+                                        'text': 'Удалить&nbsp;файл',
+                                        'alt': 'Удалить файл',
+                                        'src': '@img/cross-grey.svg',
+                                    })
+                                </div>
+                                <div class="attach__file-not-attached active">
+                                    @@include('../../UI/files/button.html', {
+                                        'class-btn': 'bg-primary text-05-color attach__btn-upload-wrapper',
+                                        'type': 'text',
+                                        'text': 'Загрузить'
+                                    })
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+                <div class="attach__card-wrapper">
+                    <input type="file" id="attach__input-file-2" class="attach__input-file" >
+                    <label for="attach__input-file-2" class="attach__input-label">
+                        <div class="attach__card-item">
+                            <div class="attach__img-wrapper">
+                                <img class="attach__img" src="@img/passport-with-registration-img.svg" alt="Разворот паспорта"/>
+                            </div>
+                            <div class="attach__card-info">
+                                <span class="text text-01-color attach__card-info-title">
+                                    Разворот паспорта с пропиской
+                                </span>
+                                <div class="attach__file-attached">
+                                    <span class="small primary-color">
+                                        Загружено
+                                    </span>
+                                    @@include('../../UI/files/button-with-icon.html', {
+                                        'type': 'button',
+                                        'class-btn-wrapper': 'attach__btn-wrapper delete attach__btn-delete-wrapper',
+                                        'class-btn': 'attach__btn',
+                                        'class-text': 'attach__btn-delete-text',
+                                        'text': 'Удалить&nbsp;файл',
+                                        'alt': 'Удалить файл',
+                                        'src': '@img/cross-grey.svg',
+                                    })
+                                </div>
+                                <div class="attach__file-not-attached active">
+                                    @@include('../../UI/files/button.html', {
+                                        'class-btn': 'bg-primary text-05-color attach__btn-upload-wrapper',
+                                        'type': 'text',
+                                        'text': 'Загрузить'
+                                    })
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="step-attaching__attach">
+            <h3 class="h2 text-01-color attach__title">
+                Ваша фотография
+            </h3>
+            <p class="text attach__text">
+                Старайтесь держать камеру на уровне глаз и фотографировать при хорошем освещении
+            </p>
+            <div class="step-attaching__grid attach__grid">
+                <div class="attach__card-wrapper">
+                    <input type="file" id="attach__input-file-3" class="attach__input-file" >
+                    <label for="attach__input-file-3" class="attach__input-label">
+                        <div class="attach__card-item">
+                            <div class="attach__img-wrapper">
+                                <img class="attach__img" src="@img/photo-client.svg" alt="Фото"/>
+                            </div>
+                            <div class="attach__card-info">
+                                <span class="text text-01-color attach__card-info-title">
+                                    Фотография
+                                </span>
+                                <div class="attach__file-attached">
+                                    <span class="small primary-color">
+                                        Загружено
+                                    </span>
+                                    @@include('../../UI/files/button-with-icon.html', {
+                                        'type': 'button',
+                                        'class-btn-wrapper': 'attach__btn-wrapper delete attach__btn-delete-wrapper',
+                                        'class-btn': 'attach__btn',
+                                        'class-text': 'attach__btn-delete-text',
+                                        'text': 'Удалить&nbsp;файл',
+                                        'alt': 'Удалить файл',
+                                        'src': '@img/cross-grey.svg',
+                                    })
+                                </div>
+                                <div class="attach__file-not-attached active">
+                                    @@include('../../UI/files/button.html', {
+                                        'class-btn': 'bg-primary text-05-color attach__btn-upload-wrapper',
+                                        'type': 'text',
+                                        'text': 'Загрузить'
+                                    })
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="step-attaching__wrapper">
+            @@include('../../UI/files/line.html', {
+                'class': 'step-attaching__line',
+            })
+
+            <div class="step-attaching__grid">
+                @@include('../../UI/files/checkbox-link.html', {
+                    'class-checkbox-wrapper': 'step-attaching__checkbox-wrapper',
+                    'id-checkbox': 'step-attaching__checkbox',
+                    'class-checkbox': 'step-attaching__checkbox',
+                    'name-checkbox': 'patronymic__checkbox',
+                    'class-text': 'step-attaching__checkbox-text',
+                    'class-link': 'primary-color',
+                    'text': 'Соглашаюсь с Правилами заполнения заявки и присоединяюсь к Соглашению об использовании ПЭП',
+                    'href': '../../../files/Panteleev_Dmitry_resume.pdf'
+                })
+
+                <div class="step-attaching__nav-btn-wrapper">
+                    @@include('../../UI/files/link-with-icon.html', {
+                        'href': '/step-calc-page.html',
+                        'class-btn-wrapper': 'step-attaching__btn-wrapper back step-attaching__btn-back-wrapper',
+                        'class-btn': 'step-attaching__btn',
+                        'class-text': '',
+                        'text': 'Назад',
+                        'alt': 'Назад',
+                        'src': '@img/chevron-left-green.svg',
+                    })
+
+                    <div class="step-attaching__btn-next-wrapper">
+                        @@include('../../UI/files/link.html', {
+                            'class-btn': 'step-attaching__btn bg-primary text-05-color step-attaching__btn-next',
+                            'class-link': '',
+                            'text': 'Далее',
+                            'href': '/window-agreement-page.html'
+                        })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

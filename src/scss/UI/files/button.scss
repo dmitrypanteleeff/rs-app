@@ -1,0 +1,14 @@
+@import '../../common/files/variables.scss';
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 21px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+    text-decoration: none;
+}

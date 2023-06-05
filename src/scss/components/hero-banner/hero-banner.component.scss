@@ -1,0 +1,54 @@
+@import '../../common/files/variables.scss';
+
+.hero-banner {
+    padding: 81px 0 78px;
+    background: linear-gradient(85.89deg, #D8E3ED 13.4%, #E5E7EB 97.35%);
+    background-image: url($mainBgURL01);
+    background-size: auto 65%;
+    background-repeat: no-repeat;
+    background-position: 90% center;
+
+    @media screen and (min-width: 1199px) {
+        background-position: 80% center;
+    }
+
+    @media screen and (min-width: 1440px) {
+        background-position: 70% center;
+    }
+
+    @media screen and (max-width: 991px) {
+        padding: 65px 0 75px;
+        background-position: 110% center;
+    }
+
+    @media screen and (max-width: 575px) {
+        padding: 30px 0 66px;
+        background-image: url($mainBgURL02);
+        background-position: 80% center;
+        background-size: auto 100%;
+    }
+
+    &__h1 {
+        max-width: 532px;
+        width: 100%;
+        margin-bottom: 26px;
+
+        @media screen and (max-width: 991px) {
+            max-width: 405px;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (max-width: 575px) {
+            max-width: 260px;
+        }
+    }
+
+    &__subtitle {
+        max-width: 375px;
+        width: 100%;
+
+        @media screen and (max-width: 575px) {
+            max-width: 190px;
+        }
+    }
+}

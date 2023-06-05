@@ -1,0 +1,140 @@
+@import './variables';
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', san-serif;
+    background-color: $bg03;
+}
+
+.container {
+    max-width: 1380px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    @media screen and (max-width: 991px) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    @media screen and (max-width: 575px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    @media screen and (max-width: 320px) {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
+main {
+    flex: 1 0 auto;
+
+    .container {
+        max-width: 1000px;
+    }
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+.h1 {
+    font: 700 27px/1.1 'Roboto', san-serif;
+
+    @media screen and (max-width: 575px) {
+        font-size: 21px;
+    }
+}
+
+.h2 {
+    font: 700 21px/1.1 'Roboto', san-serif;
+
+    @media screen and (max-width: 575px) {
+        font-size: 18px;
+    }
+}
+
+.subtitle {
+    font: 400 18px/1.4 'Roboto', san-serif;
+
+    @media screen and (max-width: 575px) {
+        font-size: 14px;
+    }
+}
+
+.paragraph {
+    font: 400 16px/1.4 'Roboto', san-serif;
+}
+
+.text {
+    font: 400 14px/1.4 'Roboto', san-serif;
+}
+
+.small {
+    font: 400 12px/1.4 'Roboto', san-serif;
+}
+
+.smallest {
+    font: 400 11px/1.4 'Roboto', san-serif;
+}
+
+.bg-01 {
+    background-color: $bg01;
+}
+
+.bg-02 {
+    background-color: $bg02;
+}
+
+.bg-03 {
+    background-color: $bg03;
+}
+
+.bg-04 {
+    background-color: $bg04;
+}
+
+.bg-primary {
+    background-color: $primary;
+}
+
+.text-01-color {
+    color: $text01;
+}
+
+.text-02-color {
+    color: $text02;
+}
+
+.text-03-color {
+    color: $text03;
+}
+
+.text-04-color {
+    color: $text04;
+}
+
+.text-05-color {
+    color: $text05;
+}
+
+.primary-color {
+    color: $primary;
+}
+
+.text_underline {
+    text-decoration: underline;
+}
+
+.text_uppercase {
+    text-transform: uppercase;
+}

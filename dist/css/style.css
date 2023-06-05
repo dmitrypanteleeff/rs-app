@@ -1,0 +1,2546 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: Roboto;
+  font-display: swap;
+  src: url("../fonts/Roboto-Black.woff2") format("woff2"), url("../fonts/Roboto-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  font-display: swap;
+  src: url("../fonts/Roboto-BlackItalic.woff2") format("woff2"), url("../fonts/Roboto-BlackItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  font-display: swap;
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  font-display: swap;
+  src: url("../fonts/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  font-display: swap;
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  font-display: swap;
+  src: url("../fonts/Roboto-MediumItalic.woff2") format("woff2"), url("../fonts/Roboto-MediumItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  font-display: swap;
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  font-display: swap;
+  src: url("../fonts/Roboto-Thin.woff2") format("woff2"), url("../fonts/Roboto-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+	 ========================================================================== */
+
+/**
+   * Remove the margin in all browsers.
+   */
+
+body {
+  margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+
+main {
+  display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+	 ========================================================================== */
+
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+	 ========================================================================== */
+
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+
+a {
+  background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+	 ========================================================================== */
+
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+	 ========================================================================== */
+
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+
+[type=checkbox],
+[type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+	 ========================================================================== */
+
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+
+details {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+	 ========================================================================== */
+
+/**
+   * Add the correct display in IE 10+.
+   */
+
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+
+[hidden] {
+  display: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/** Цвет фона */
+
+/** Цвет текста */
+
+/** Цвет границ */
+
+/** Ссылки на иконки */
+
+/** Картинки */
+
+/** Цвет фона */
+
+/** Цвет текста */
+
+/** Цвет границ */
+
+/** Ссылки на иконки */
+
+/** Картинки */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Roboto", san-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 1380px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+main .container {
+  max-width: 1000px;
+}
+
+footer {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.h1 {
+  font: 700 27px/1.1 "Roboto", san-serif;
+}
+
+.h2 {
+  font: 700 21px/1.1 "Roboto", san-serif;
+}
+
+.subtitle {
+  font: 400 18px/1.4 "Roboto", san-serif;
+}
+
+.paragraph {
+  font: 400 16px/1.4 "Roboto", san-serif;
+}
+
+.text {
+  font: 400 14px/1.4 "Roboto", san-serif;
+}
+
+.small {
+  font: 400 12px/1.4 "Roboto", san-serif;
+}
+
+.smallest {
+  font: 400 11px/1.4 "Roboto", san-serif;
+}
+
+.bg-01 {
+  background-color: #3d4040;
+}
+
+.bg-02 {
+  background-color: #c9c9c9;
+}
+
+.bg-03 {
+  background-color: #f5f5f5;
+}
+
+.bg-04 {
+  background-color: #ffffff;
+}
+
+.bg-primary {
+  background-color: #84b245;
+}
+
+.text-01-color {
+  color: #333333;
+}
+
+.text-02-color {
+  color: #666666;
+}
+
+.text-03-color {
+  color: #999999;
+}
+
+.text-04-color {
+  color: #b3b3b3;
+}
+
+.text-05-color {
+  color: #ffffff;
+}
+
+.primary-color {
+  color: #84b245;
+}
+
+.text_underline {
+  text-decoration: underline;
+}
+
+.text_uppercase {
+  text-transform: uppercase;
+}
+
+/** Цвет фона */
+
+/** Цвет текста */
+
+/** Цвет границ */
+
+/** Ссылки на иконки */
+
+/** Картинки */
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px 21px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+/** Цвет фона */
+
+/** Цвет текста */
+
+/** Цвет границ */
+
+/** Ссылки на иконки */
+
+/** Картинки */
+
+.input {
+  position: relative;
+  width: 100%;
+}
+
+.input__value {
+  width: 100%;
+  height: 36px;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #c1c1c1;
+  font-size: 14px;
+  color: #333333;
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+}
+
+.input__value:valid,
+.input__value:focus {
+  background-color: transparent;
+  outline: none;
+}
+
+.input__value:valid ~ .input__placeholder,
+.input__value:focus ~ .input__placeholder {
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+  font-size: 11px;
+  -webkit-transform: translateY(-18px) translateX(3px);
+      -ms-transform: translateY(-18px) translateX(3px);
+          transform: translateY(-18px) translateX(3px);
+}
+
+.input__placeholder {
+  font-size: 14px;
+  color: #999999;
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+
+/** Цвет фона */
+
+/** Цвет текста */
+
+/** Цвет границ */
+
+/** Ссылки на иконки */
+
+/** Картинки */
+
+.select {
+  width: 100%;
+}
+
+.select__title {
+  position: absolute;
+  top: -8px;
+  font-size: 11px;
+  color: #999999;
+}
+
+.select__title-wrapper {
+  position: relative;
+}
+
+.select__wrapper {
+  position: relative;
+  z-index: 99999;
+}
+
+.select__value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 10px;
+}
+
+.select__value-item {
+  color: #333333;
+}
+
+.select.open .select__dropdown {
+  display: block;
+}
+
+.select.open .select__value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+.select.open .select__backdrop {
+  display: block;
+}
+
+.select__backdrop {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.select__backdrop.show {
+  display: block;
+}
+
+.select__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.select__item {
+  padding: 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.select__item:hover {
+  background-color: #eee;
+  cursor: pointer;
+  -webkit-transition: 0.15s background-color ease-in;
+  -o-transition: 0.15s background-color ease-in;
+  transition: 0.15s background-color ease-in;
+}
+
+.select__item.selected {
+  background-color: bisque;
+}
+
+.select__dropdown {
+  z-index: -1;
+  display: none;
+  position: absolute;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  top: 36px;
+  left: 0;
+  right: 0;
+  max-height: 185px;
+  overflow-y: scroll;
+  -webkit-box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+/** Цвет фона */
+
+/** Цвет текста */
+
+/** Цвет границ */
+
+/** Ссылки на иконки */
+
+/** Картинки */
+
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox__text {
+  color: #333333;
+}
+
+.custom-checkbox__link.btn {
+  padding: 0;
+}
+
+.custom-checkbox + label {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.custom-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  border: 1.5px solid #e3e3e3;
+  border-radius: 2px;
+  margin-right: 10px;
+  background-color: #ffffff;
+  border-radius: 7px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.custom-checkbox:checked + label::before {
+  border-color: #84b245;
+  background-image: url("../img/green-check.svg");
+}
+
+/** Цвет фона */
+
+/** Цвет текста */
+
+/** Цвет границ */
+
+/** Ссылки на иконки */
+
+/** Картинки */
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px 21px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+/** Цвет фона */
+
+/** Цвет текста */
+
+/** Цвет границ */
+
+/** Ссылки на иконки */
+
+/** Картинки */
+
+.btn-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px 0;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.btn-icon__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 100px;
+  width: 100%;
+}
+
+.btn-icon__icon-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20px;
+  height: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.btn-icon.delete .btn-icon__icon-wrapper {
+  width: auto;
+  height: auto;
+}
+
+.btn-icon.delete .btn-icon__text {
+  font-size: 12px;
+  color: #9c9ab1;
+}
+
+.btn-icon.add {
+  color: #9c9ab1;
+}
+
+.btn-icon.add .btn-icon__inner {
+  max-width: 150px;
+}
+
+.btn-icon.add .btn-icon__icon-wrapper {
+  border-radius: 50%;
+  background-color: #84b245;
+}
+
+.btn-icon.add .btn-icon__text {
+  font-size: 14px;
+  color: #333333;
+}
+
+.btn-icon.back {
+  color: #9c9ab1;
+}
+
+.btn-icon.back .btn-icon__inner {
+  max-width: 60px;
+}
+
+.btn-icon.back .btn-icon__icon-wrapper {
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+}
+
+.btn-icon.back .btn-icon__text {
+  font-size: 15px;
+  color: #84b245;
+}
+
+/** Цвет фона */
+
+/** Цвет текста */
+
+/** Цвет границ */
+
+/** Ссылки на иконки */
+
+/** Картинки */
+
+.icon__wrapper {
+  width: 24px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/** Цвет фона */
+
+/** Цвет текста */
+
+/** Цвет границ */
+
+/** Ссылки на иконки */
+
+/** Картинки */
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #ebebeb;
+  margin-top: 10px;
+}
+
+/** Цвет фона */
+
+/** Цвет текста */
+
+/** Цвет границ */
+
+/** Ссылки на иконки */
+
+/** Картинки */
+
+.step-progress {
+  display: -ms-grid;
+  display: grid;
+  gap: 12px;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.step-progress > div {
+  height: 6px;
+  background-color: #c9c9c9;
+}
+
+.step-progress > div.active {
+  background-color: #84b245;
+}
+
+.step-progress > div:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1/1/1/2;
+  border-radius: 10px 0 0 10px;
+}
+
+.step-progress > div:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1/2/1/3;
+}
+
+.step-progress > div:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 1/3/1/4;
+  border-radius: 0 10px 10px 0;
+}
+
+/** Цвет фона */
+
+/** Цвет текста */
+
+/** Цвет границ */
+
+/** Ссылки на иконки */
+
+/** Картинки */
+
+.window {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #3d4040;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+}
+
+/** Цвет фона */
+
+/** Цвет текста */
+
+/** Цвет границ */
+
+/** Ссылки на иконки */
+
+/** Картинки */
+
+.header {
+  background-color: #3d4040;
+}
+
+.header__wrapper {
+  padding: 12px 0;
+}
+
+/** Цвет фона */
+
+/** Цвет текста */
+
+/** Цвет границ */
+
+/** Ссылки на иконки */
+
+/** Картинки */
+
+.hero-banner {
+  padding: 81px 0 78px;
+  background: -o-linear-gradient(4.11deg, #D8E3ED 13.4%, #E5E7EB 97.35%);
+  background: linear-gradient(85.89deg, #D8E3ED 13.4%, #E5E7EB 97.35%);
+  background-image: url("../img/main-bg-01.svg");
+  background-size: auto 65%;
+  background-repeat: no-repeat;
+  background-position: 90% center;
+}
+
+.hero-banner__h1 {
+  max-width: 532px;
+  width: 100%;
+  margin-bottom: 26px;
+}
+
+.hero-banner__subtitle {
+  max-width: 375px;
+  width: 100%;
+}
+
+/** Цвет фона */
+
+/** Цвет текста */
+
+/** Цвет границ */
+
+/** Ссылки на иконки */
+
+/** Картинки */
+
+.step-client {
+  padding: 50px 0 60px;
+}
+
+.step-client__step-progress {
+  margin-bottom: 60px;
+}
+
+.step-client__form-wrapper {
+  display: -ms-grid;
+  display: grid;
+  gap: 50px;
+  -ms-grid-rows: (1fr)[3];
+  grid-template-rows: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 70px;
+}
+
+.step-client__checkbox-wrapper {
+  margin-top: 5px;
+  position: absolute;
+}
+
+.step-client__input-wrapper {
+  width: 100%;
+}
+
+.step-client__input-patronymic {
+  position: relative;
+}
+
+.step-client__input-code {
+  position: relative;
+}
+
+.step-client__btn {
+  max-width: 220px;
+  padding: 10px;
+}
+
+.step-client__btn-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.step-client__line {
+  margin-bottom: 40px;
+}
+
+.step-client__info {
+  position: absolute;
+  margin-top: 5px;
+}
+
+/** Цвет фона */
+
+/** Цвет текста */
+
+/** Цвет границ */
+
+/** Ссылки на иконки */
+
+/** Картинки */
+
+.step-calc {
+  padding: 60px 0;
+}
+
+.step-calc__step-progress {
+  margin-bottom: 35px;
+}
+
+.step-calc__total-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.step-calc__total-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.step-calc__nav-btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.step-calc__btn-add-wrapper {
+  max-width: 150px;
+}
+
+.step-calc__btn-back-wrapper {
+  max-width: 62px;
+  margin-right: 54px;
+}
+
+.step-calc__btn-delete {
+  max-width: none;
+}
+
+.step-calc__btn-next {
+  max-width: 220px;
+  padding: 10px;
+}
+
+.step-calc__line {
+  margin-bottom: 40px;
+}
+
+.step-calc__goods-container {
+  max-width: 1000px;
+  margin-bottom: 30px;
+}
+
+.step-calc__goods-name.goods-grid {
+  margin-bottom: 10px;
+  padding-bottom: 0;
+}
+
+.step-calc__goods-name.goods-grid > div {
+  width: 100%;
+}
+
+.step-calc__goods-name.goods-grid > div:nth-child(3) {
+  width: 108px;
+}
+
+.goods-grid__card:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.goods-grid__card .goods-grid__card-text-wrap {
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+.goods-grid__card .goods-grid__input-placeholder {
+  display: none;
+}
+
+/** Цвет фона */
+
+/** Цвет текста */
+
+/** Цвет границ */
+
+/** Ссылки на иконки */
+
+/** Картинки */
+
+.progress-header__title {
+  margin-bottom: 6px;
+}
+
+.progress-header__subtitle {
+  margin-bottom: 18px;
+}
+
+/** Цвет фона */
+
+/** Цвет текста */
+
+/** Цвет границ */
+
+/** Ссылки на иконки */
+
+/** Картинки */
+
+.goods-grid {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 65px;
+  padding: 15px 20px 15px 43px;
+}
+
+.goods-grid > div {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.goods-grid > div:nth-child(3) {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.goods-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+/** Цвет фона */
+
+/** Цвет текста */
+
+/** Цвет границ */
+
+/** Ссылки на иконки */
+
+/** Картинки */
+
+.step-attaching {
+  padding: 60px 0;
+}
+
+.step-attaching__step-progress {
+  margin-bottom: 73px;
+}
+
+.step-attaching__agreement-btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.step-attaching__nav-btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.step-attaching__btn-add-wrapper {
+  max-width: 150px;
+}
+
+.step-attaching__btn-back-wrapper {
+  max-width: 62px;
+  margin-right: 54px;
+}
+
+.step-attaching__btn-delete {
+  max-width: none;
+}
+
+.step-attaching__btn-next {
+  padding: 10px;
+}
+
+.step-attaching__btn-next-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 220px;
+  width: 100%;
+}
+
+.step-attaching__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 27px;
+}
+
+.step-attaching__attach:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.step-attaching__line {
+  margin: 40px 0;
+}
+
+.step-attaching__checkbox-wrapper {
+  margin-bottom: 23px;
+}
+
+.step-attaching__checkbox-text {
+  color: #84b245;
+  text-decoration: underline;
+}
+
+.custom-checkbox + .step-attaching__checkbox-text {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.attach__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.attach__title {
+  margin-bottom: 10px;
+}
+
+.attach__text {
+  margin-bottom: 30px;
+  color: #666666;
+}
+
+.attach__input-file {
+  opacity: 0;
+  z-index: -10;
+  position: absolute;
+}
+
+.attach__card-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 30px;
+  height: 100%;
+}
+
+.attach__card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.attach__card-info-title {
+  display: block;
+}
+
+.attach__img {
+  width: 100%;
+}
+
+.attach__img-wrapper {
+  width: 51px;
+  margin-right: 50px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.attach__btn {
+  max-width: 110px;
+}
+
+.attach__btn .btn-icon__icon-wrapper {
+  margin-right: 10px;
+}
+
+.attach__btn-delete-wrapper {
+  width: auto;
+}
+
+.attach__btn-upload-wrapper {
+  width: auto;
+  pointer-events: none;
+}
+
+.attach__file-not-attached {
+  display: none;
+  margin-top: 20px;
+}
+
+.attach__file-not-attached.active {
+  display: block;
+}
+
+.attach__file-attached {
+  display: none;
+}
+
+.attach__file-attached.active {
+  display: block;
+}
+
+/** Цвет фона */
+
+/** Цвет текста */
+
+/** Цвет границ */
+
+/** Ссылки на иконки */
+
+/** Картинки */
+
+.window-agreement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 70vh;
+}
+
+.window-agreement__window {
+  background-color: #ffffff;
+  padding: 43px 50px;
+}
+
+.window-agreement__window-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.window-agreement__title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.window-agreement__code-wrapper {
+  max-width: 210px;
+  width: 100%;
+}
+
+.window-agreement__btn-next {
+  padding: 10px;
+  max-width: 236px;
+  margin-bottom: 40px;
+}
+
+.window-agreement__hint {
+  max-width: 265px;
+  width: 100%;
+}
+
+.code-wrapper__inputs-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.code-wrapper__text {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.code-wrapper__input-wrapper {
+  max-width: 45px;
+  margin-bottom: 50px;
+}
+
+.code-wrapper__input-value {
+  font-size: 32px;
+  text-align: center;
+}
+
+/** Цвет фона */
+
+/** Цвет текста */
+
+/** Цвет границ */
+
+/** Ссылки на иконки */
+
+/** Картинки */
+
+.window-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 70vh;
+}
+
+.window-order__window {
+  background-color: #ffffff;
+  padding: 43px 50px;
+}
+
+.window-order__window-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.window-order__title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.window-order__hint {
+  text-align: center;
+  max-width: 380px;
+  width: 100%;
+}
+
+.window-order__img {
+  width: 100%;
+}
+
+.window-order__img-wrapper {
+  max-width: 90px;
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+/** Цвет фона */
+
+/** Цвет текста */
+
+/** Цвет границ */
+
+/** Ссылки на иконки */
+
+/** Картинки */
+
+.modal-window {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  -webkit-transform: translateY(120vh);
+      -ms-transform: translateY(120vh);
+          transform: translateY(120vh);
+  -webkit-transition: background-color 500ms ease-out 0ms, -webkit-transform 500ms ease-out 500ms;
+  transition: background-color 500ms ease-out 0ms, -webkit-transform 500ms ease-out 500ms;
+  -o-transition: transform 500ms ease-out 500ms, background-color 500ms ease-out 0ms;
+  transition: transform 500ms ease-out 500ms, background-color 500ms ease-out 0ms;
+  transition: transform 500ms ease-out 500ms, background-color 500ms ease-out 0ms, -webkit-transform 500ms ease-out 500ms;
+}
+
+.modal-window.active {
+  -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+          transform: translateY(0px);
+  background-color: rgba(86, 86, 86, 0.15);
+  -webkit-transition: background-color 500ms ease-out 500ms, -webkit-transform 500ms ease-out 0ms;
+  transition: background-color 500ms ease-out 500ms, -webkit-transform 500ms ease-out 0ms;
+  -o-transition: transform 500ms ease-out 0ms, background-color 500ms ease-out 500ms;
+  transition: transform 500ms ease-out 0ms, background-color 500ms ease-out 500ms;
+  transition: transform 500ms ease-out 0ms, background-color 500ms ease-out 500ms, -webkit-transform 500ms ease-out 0ms;
+}
+
+.modal-window__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  max-width: 360px;
+  width: 100%;
+}
+
+.modal-window__title {
+  margin-bottom: 40px;
+}
+
+.modal-window__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  width: 100%;
+}
+
+.modal-window__btn-add {
+  padding: 10px;
+}
+
+.modal-window__btn-add-wrapper {
+  max-width: 220px;
+  width: 100%;
+  margin: 40px auto 0;
+}
+
+.modal-window__btn-close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border-radius: 0;
+  background-color: transparent;
+  position: relative;
+}
+
+.modal-window__btn-close::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: #9c9ab1;
+}
+
+.modal-window__btn-close::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background-color: #9c9ab1;
+}
+
+.modal-window__btn-close-wrapper {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/** Цвет фона */
+
+/** Цвет текста */
+
+/** Цвет границ */
+
+/** Ссылки на иконки */
+
+/** Картинки */
+
+.footer {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 40px 0 60px;
+  background-color: #3d4040;
+}
+
+.footer__text-top {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1199px) {
+  .hero-banner {
+    background-position: 80% center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-banner {
+    background-position: 70% center;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .step-progress {
+    gap: 5px;
+  }
+
+  .header__header-links {
+    max-width: 400px;
+  }
+
+  .hero-banner {
+    padding: 65px 0 75px;
+    background-position: 110% center;
+  }
+
+  .hero-banner__h1 {
+    max-width: 405px;
+    margin-bottom: 20px;
+  }
+
+  .step-client {
+    padding: 40px 0 60px;
+  }
+
+  .step-client__form-wrapper {
+    gap: 60px;
+    -ms-grid-rows: (1fr)[4];
+    grid-template-rows: repeat(4, 1fr);
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .step-client__form-wrapper > div:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 1/1/1/2;
+  }
+
+  .step-client__form-wrapper > div:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 1/2/1/3;
+  }
+
+  .step-client__form-wrapper > div:nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: 2/1/2/3;
+  }
+
+  .step-client__form-wrapper > div:nth-child(4) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 4/2/4/3;
+  }
+
+  .step-client__form-wrapper > div:nth-child(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 3/1/3/2;
+  }
+
+  .step-client__form-wrapper > div:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 3/2/3/3;
+  }
+
+  .step-client__form-wrapper > div:nth-child(7) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 4/1/4/2;
+  }
+
+  .step-client__checkbox-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-left: 60px;
+  }
+
+  .step-client__checkbox-wrapper {
+    position: relative;
+  }
+
+  .step-client__input-patronymic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .step-client__input-code {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .step-calc {
+    padding: 40px 0 60px;
+  }
+
+  .step-calc__step-progress {
+    margin-bottom: 25px;
+  }
+
+  .step-calc__btn-back-wrapper {
+    margin-right: 40px;
+  }
+
+  .step-calc__goods-container {
+    margin-bottom: 40px;
+  }
+
+  .goods-grid {
+    padding: 20px;
+    gap: 0 40px;
+  }
+
+  .goods-grid {
+    -ms-grid-columns: 1fr 1fr 0.5fr;
+    grid-template-columns: 1fr 1fr 0.5fr;
+  }
+
+  .step-attaching__step-progress {
+    margin-bottom: 60px;
+  }
+
+  .step-attaching__btn-back-wrapper {
+    margin-right: 40px;
+  }
+
+  .step-attaching__grid {
+    gap: 0 20px;
+  }
+
+  .attach__img-wrapper {
+    margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__container {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  .header__header-links {
+    max-width: none;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
+  .attach__img-wrapper {
+    margin-right: 10%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .h1 {
+    font-size: 21px;
+  }
+
+  .h2 {
+    font-size: 18px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .select__item {
+    font-size: 13px;
+  }
+
+  .step-progress {
+    gap: 2px;
+  }
+
+  .hero-banner {
+    padding: 30px 0 66px;
+    background-image: url("../img/main-bg-02.svg");
+    background-position: 80% center;
+    background-size: auto 100%;
+  }
+
+  .hero-banner__h1 {
+    max-width: 260px;
+  }
+
+  .hero-banner__subtitle {
+    max-width: 190px;
+  }
+
+  .step-client {
+    padding: 40px 0;
+  }
+
+  .step-client__step-progress {
+    margin-bottom: 30px;
+  }
+
+  .step-client__form-wrapper {
+    gap: 20px;
+    -ms-grid-rows: (0.5fr)[7];
+    grid-template-rows: repeat(7, 0.5fr);
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 30px;
+  }
+
+  .step-client__form-wrapper > div:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 1/1/1/2;
+  }
+
+  .step-client__form-wrapper > div:nth-child(2) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 2/1/2/2;
+  }
+
+  .step-client__form-wrapper > div:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 3/1/3/2;
+  }
+
+  .step-client__form-wrapper > div:nth-child(4) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 4/1/4/2;
+  }
+
+  .step-client__form-wrapper > div:nth-child(5) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 5/1/5/2;
+  }
+
+  .step-client__form-wrapper > div:nth-child(6) {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 6/1/6/2;
+  }
+
+  .step-client__form-wrapper > div:nth-child(7) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 7/1/7/2;
+  }
+
+  .step-client__checkbox-inner {
+    margin-left: 0;
+  }
+
+  .step-client__input-patronymic {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .step-client__btn-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .step-client__line {
+    display: none;
+  }
+
+  .step-calc {
+    padding: 40px 0;
+  }
+
+  .step-calc__step-progress {
+    margin-bottom: 40px;
+  }
+
+  .step-calc__total-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-bottom: 0;
+  }
+
+  .step-calc__total-info {
+    margin-bottom: 32px;
+  }
+
+  .step-calc__nav-btn-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .step-calc__btn-add-wrapper {
+    max-width: 280px;
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    margin: 0 auto 40px;
+    padding: 15px 0;
+  }
+
+  .step-calc__btn-back-wrapper {
+    margin-right: 0;
+  }
+
+  .step-calc__btn-next {
+    margin-bottom: 30px;
+  }
+
+  .step-calc__line {
+    display: none;
+  }
+
+  .step-calc__goods-container {
+    max-width: none;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .step-calc__goods-name.goods-grid {
+    display: none;
+  }
+
+  .goods-grid__card .goods-grid__card-text-wrap {
+    display: none;
+  }
+
+  .goods-grid__card .goods-grid__input-placeholder {
+    display: block;
+  }
+
+  .goods-grid__card .btn-icon.delete .btn-icon__icon-wrapper {
+    width: 20px;
+  }
+
+  .goods-grid__card .btn-icon.delete .btn-icon__icon-wrapper img {
+    width: 100%;
+  }
+
+  .goods-grid {
+    padding: 40px 20px 40px;
+  }
+
+  .goods-grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[2];
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px 0;
+  }
+
+  .goods-grid > div {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+
+  .goods-grid > div:nth-child(3) {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  .goods-card {
+    border-radius: 0;
+  }
+
+  .step-attaching__step-progress {
+    margin-bottom: 30px;
+  }
+
+  .step-attaching__attach-container {
+    background-color: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .step-attaching__agreement-btn-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .step-attaching__nav-btn-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .step-attaching__btn-add-wrapper {
+    max-width: 280px;
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    margin: 0 auto 40px;
+    padding: 15px 0;
+  }
+
+  .step-attaching__btn-back-wrapper {
+    margin-right: 0;
+  }
+
+  .step-attaching__btn-next-wrapper {
+    margin-bottom: 30px;
+  }
+
+  .step-attaching__grid {
+    gap: 10px 0;
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .step-attaching__attach:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .attach__grid {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .attach__text {
+    color: #999999;
+  }
+
+  .attach__card-item {
+    background-color: #f6f6f9;
+  }
+
+  .attach__img-wrapper {
+    margin-right: 37px;
+  }
+
+  .attach__file-not-attached {
+    margin-top: 18px;
+  }
+
+  .window-agreement__window {
+    padding: 20px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background-color: transparent;
+  }
+
+  .window-agreement__title {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .window-agreement__code-wrapper {
+    max-width: 195px;
+  }
+
+  .window-agreement__btn-next {
+    max-width: 220px;
+    margin-bottom: 35px;
+  }
+
+  .window-agreement__hint {
+    max-width: 177px;
+  }
+
+  .code-wrapper__input-wrapper {
+    margin-bottom: 45px;
+  }
+
+  .window-order__window {
+    padding: 20px;
+    background-color: transparent;
+  }
+
+  .window-order__title {
+    margin-bottom: 15px;
+  }
+
+  .window-order__hint {
+    max-width: 280px;
+  }
+
+  .window-order__img-wrapper {
+    max-width: 82px;
+    margin-bottom: 35px;
+  }
+
+  .modal-window {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+
+  .modal-window__content {
+    border-radius: 10px 10px 0 0;
+    max-width: none;
+  }
+
+  .footer {
+    padding: 30px 0;
+  }
+
+  .footer__text-top {
+    font-size: 12px;
+  }
+
+  .footer__text-bottom {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .step-calc__goods-container {
+    padding: 0;
+  }
+}

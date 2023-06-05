@@ -1,0 +1,68 @@
+<section class="window-agreement bg-03">
+    <div class="window-agreement__window-wrapper">
+        <div class="window window-agreement__window">
+            <h1 class="h1 text-01-color window-agreement__title">
+                Согласие на дистанционное взаимодействие
+            </h1>
+            <div class="window-agreement__code-wrapper">
+                <span class="text text-01-color code-wrapper__text">
+                    Введите код из СМС
+                </span>
+                <div class="code-wrapper__inputs-wrapper">
+                    @@include('../../UI/files/input-placeholder.html', {
+                        'class-input-wrapper': 'code-wrapper__input-wrapper',
+                        'class-input-value': 'code-wrapper__input-value',
+                        'class-input-placeholder': '',
+                        'value': '',
+                        'placeholder': '',
+                        'name': 'digit-1',
+                        'type': 'text',
+                        'required': 'true'
+                    })
+
+                    @@include('../../UI/files/input-placeholder.html', {
+                        'class-input-wrapper': 'code-wrapper__input-wrapper',
+                        'class-input-value': 'code-wrapper__input-value',
+                        'class-input-placeholder': '',
+                        'value': '',
+                        'placeholder': '',
+                        'name': 'digit-2',
+                        'type': 'text',
+                        'required': 'true'
+                    })
+
+                    @@include('../../UI/files/input-placeholder.html', {
+                        'class-input-wrapper': 'code-wrapper__input-wrapper',
+                        'class-input-value': 'code-wrapper__input-value',
+                        'class-input-placeholder': '',
+                        'value': '',
+                        'placeholder': '',
+                        'name': 'digit-3',
+                        'type': 'text',
+                        'required': 'true'
+                    })
+
+                    @@include('../../UI/files/input-placeholder.html', {
+                        'class-input-wrapper': 'code-wrapper__input-wrapper',
+                        'class-input-value': 'code-wrapper__input-value',
+                        'class-input-placeholder': '',
+                        'value': '',
+                        'placeholder': '',
+                        'name': 'digit-4',
+                        'type': 'text',
+                        'required': 'true'
+                    })
+                </div>
+            </div>
+            @@include('../../UI/files/link.html', {
+                'class-btn': 'window-agreement__btn bg-primary text-05-color window-agreement__btn-next',
+                'class-link': '',
+                'text': 'Подтвердить',
+                'href': '/window-order-page.html'
+            })
+            <span class="small text-03-color window-agreement__hint">
+                Отправить СМС повторно можно через <span class="window-agreement__hint-count"></span>&nbsp;сек
+            </span>
+        </div>
+    </div>
+</section>

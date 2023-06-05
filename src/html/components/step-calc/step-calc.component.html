@@ -1,0 +1,145 @@
+<section class="step-client bg-03">
+    <div class="container">
+        <div class="step-calc__wrapper">
+            <div>
+                @@include('../progress-header/progress-header.component.html', {
+                    'class-wrapper': 'step-calc__step-progress',
+                    'class-title': 'step-calc__step-progress-title primary-color',
+                    'title': 'Шаг 2',
+                    'class-subtitle': 'step-calc__step-progress-subtitle',
+                    'subtitle': 'Данные о товарной корзине',
+                    'class-step-progress': '',
+                    'class-step-1': 'active',
+                    'class-step-2': 'active',
+                    'class-step-3': ''
+                })
+            </div>
+        </div>
+    </div>
+
+    <div class="container step-calc__goods-container">
+        <div class="goods-grid step-calc__goods-name">
+            <div class="small text-03-color">
+                Наименование товара
+            </div>
+            <div class="small text-03-color">
+                Стоимость
+            </div>
+            <div></div>
+        </div>
+
+        @@include('../goods-card/goods-card.component.html', {
+            'class-wrapper': 'goods-grid__card',
+            'class-input-wrapper': 'goods-grid__input-wrapper',
+            'class-input-value': 'goods-grid__input',
+            'class-input-placeholder': 'goods-grid__input-placeholder',
+            'input-placeholder-1': 'Наименование товара',
+            'input-placeholder-2': 'Стоимость',
+            'input-value-1': 'Велосипед',
+            'input-value-2': '45 630',
+            'input-name-1': 'name',
+            'input-name-2': 'cost',
+            'input-type-1': 'text',
+            'input-type-2': 'text',
+            'required-1': 'true',
+            'required-2': 'true',
+            'type-btn': 'button',
+            'class-btn-wrapper': 'step-calc__btn-wrapper delete step-calc__btn-delete-wrapper',
+            'class-btn': 'step-calc__btn-delete',
+            'class-text': 'goods-grid__card-text-wrap',
+            'btn-text': 'Удалить товар',
+            'alt': 'Удалить товар',
+            'src': '@img/cross-grey.svg',            
+        })
+
+        @@include('../goods-card/goods-card.component.html', {
+            'class-wrapper': 'goods-grid__card',
+            'class-input-wrapper': 'goods-grid__input-wrapper',
+            'class-input-value': 'goods-grid__input',
+            'class-input-placeholder': 'goods-grid__input-placeholder',
+            'input-placeholder-1': 'Наименование товара',
+            'input-placeholder-2': 'Стоимость',
+            'input-value-1': 'Телевизор',
+            'input-value-2': '31 200',
+            'input-name-1': 'name',
+            'input-name-2': 'cost',
+            'input-type-1': 'text',
+            'input-type-2': 'text',
+            'required-1': 'true',
+            'required-2': 'true',
+            'type-btn': 'button',
+            'class-btn-wrapper': 'step-calc__btn-wrapper delete step-calc__btn-delete-wrapper',
+            'class-btn': 'step-calc__btn-delete',
+            'class-text': 'goods-grid__card-text-wrap',
+            'btn-text': 'Удалить товар',
+            'alt': 'Удалить товар',
+            'src': '@img/cross-grey.svg',            
+        })
+
+        @@include('../goods-card/goods-card.component.html', {
+            'class-wrapper': 'goods-grid__card',
+            'class-input-wrapper': 'goods-grid__input-wrapper',
+            'class-input-value': 'goods-grid__input',
+            'class-input-placeholder': 'goods-grid__input-placeholder',
+            'input-placeholder-1': 'Наименование товара',
+            'input-placeholder-2': 'Стоимость',
+            'input-value-1': 'Наушники',
+            'input-value-2': '10 200',
+            'input-name-1': 'name',
+            'input-name-2': 'cost',
+            'input-type-1': 'text',
+            'input-type-2': 'text',
+            'required-1': 'true',
+            'required-2': 'true',
+            'type-btn': 'button',
+            'class-btn-wrapper': 'step-calc__btn-wrapper delete step-calc__btn-delete-wrapper',
+            'class-btn': 'step-calc__btn-delete',
+            'class-text': 'goods-grid__card-text-wrap',
+            'btn-text': 'Удалить товар',
+            'alt': 'Удалить товар',
+            'src': '@img/cross-grey.svg',            
+        })
+    </div>
+
+    <div class="container">
+        <div class="step-calc__wrapper">
+            <div class="step-calc__total-wrapper">
+                <div class="paragraph text-01-color step-calc__total-info">
+                    Итого:&nbsp;<span class="primary-color">147 800.55 руб.</span>
+                </div>
+                @@include('../../UI/files/button-with-icon.html', {
+                    'type': 'button',
+                    'class-btn-wrapper': 'step-calc__btn-wrapper add step-calc__btn-add-wrapper',
+                    'class-btn': 'step-calc__btn',
+                    'class-text': 'step-calc__btn-add-text',
+                    'text': 'Добавить товар',
+                    'alt': 'Добавить',
+                    'src': '@img/cross-white.svg',
+                })
+            </div>
+
+            @@include('../../UI/files/line.html', {
+                'class': 'step-calc__line',
+            })
+
+            <div class="step-calc__nav-btn-wrapper">
+                @@include('../../UI/files/link-with-icon.html', {
+                    'href': '/',
+                    'class-btn-wrapper': 'step-calc__btn-wrapper back step-calc__btn-back-wrapper',
+                    'class-btn': 'step-calc__btn',
+                    'text': 'Назад',
+                    'alt': 'Назад',
+                    'src': '@img/chevron-left-green.svg',
+                })
+
+                @@include('../../UI/files/link.html', {
+                    'class-btn': 'step-calc__btn bg-primary text-05-color step-calc__btn-next',
+                    'text': 'Далее',
+                    'href': '/step-attaching-images-page.html'
+                })
+            </div>
+        </div>
+    </div>
+
+    @@include('../modal-window/modal-window.component.html')
+</section>

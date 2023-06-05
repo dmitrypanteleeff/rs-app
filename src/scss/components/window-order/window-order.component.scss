@@ -1,0 +1,57 @@
+@import '../../common/files/variables.scss';
+
+.window-order {
+    display: flex;
+    min-height: 70vh;
+
+    &__window {
+        background-color: $bg04;
+        padding: 43px 50px;
+
+        @media screen and (max-width: 575px) {
+            padding: 20px;
+            background-color: transparent;
+        }
+
+        &-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 575px) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__hint {
+        text-align: center;
+        max-width: 380px;
+        width: 100%;
+
+        @media screen and (max-width: 575px) {
+            max-width: 280px;
+        }
+    }
+
+    &__img {
+        width: 100%;
+
+        &-wrapper {
+            max-width: 90px;
+            width: 100%;
+            margin-bottom: 45px;
+
+            @media screen and (max-width: 575px) {
+                max-width: 82px;
+                margin-bottom: 35px;
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+@import '../../common/files/variables.scss';
+
+.progress-header {
+    &__title {
+        margin-bottom: 6px;
+    }
+
+    &__subtitle {
+        margin-bottom: 18px;
+    }
+}

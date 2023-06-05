@@ -1,0 +1,115 @@
+<section class="step-client bg-03">
+    <div class="container">
+        <div class="step-client__wrapper">
+            <div>
+                @@include('../progress-header/progress-header.component.html', {
+                    'class-wrapper': 'step-client__step-progress',
+                    'class-title': 'step-client__step-progress-title primary-color',
+                    'title': 'Шаг 1',
+                    'class-subtitle': 'step-client__step-progress-subtitle',
+                    'subtitle': 'Данные о Клиенте',
+                    'class-step-progress': '',
+                    'class-step-1': 'active',
+                    'class-step-2': '',
+                    'class-step-3': ''
+                })
+            </div>
+            
+            <div class="step-client__form-wrapper">
+                @@include('../../UI/files/input-placeholder.html', {
+                    'class-input-wrapper': 'step-client__input-wrapper',
+                    'class-input-value': 'step-client__input-value',
+                    'class-input-placeholder': '',
+                    'value': '',
+                    'placeholder': 'Фамилия',
+                    'name': 'surname',
+                    'type': 'text',
+                    'required': 'true'
+                })
+                @@include('../../UI/files/input-placeholder.html', {
+                    'class-input-wrapper': 'step-client__input-wrapper',
+                    'class-input-value': 'step-client__input-value',
+                    'class-input-placeholder': '',
+                    'value': '',
+                    'placeholder': 'Имя',
+                    'name': 'name',
+                    'type': 'text',
+                    'required': 'true'
+                })
+                <div class="step-client__input-patronymic">
+                    @@include('../../UI/files/input-placeholder.html', {
+                        'class-input-wrapper': 'step-client__input-wrapper',
+                        'class-input-value': 'step-client__input-value',
+                        'class-input-placeholder': '',
+                        'value': '',
+                        'placeholder': 'Отчество',
+                        'name': 'patronymic',
+                        'type': 'text',
+                        'required': 'true'
+                    })
+                    <div class="step-client__checkbox-inner">
+                        @@include('../../UI/files/checkbox.html', {
+                            'class-checkbox-wrapper': 'step-client__checkbox-wrapper',
+                            'id-checkbox': 'step-client__checkbox',
+                            'class-checkbox': 'step-client__checkbox',
+                            'name-checkbox': 'patronymic__checkbox',
+                            'class-text': 'step-client__checkbox-text',
+                            'text': 'Нет&nbsp;отчества'
+                        })
+                    </div>
+                </div>
+                
+                <div id="select" class="step-client__input-wrapper">
+                </div>
+                @@include('../../UI/files/input-placeholder.html', {
+                    'class-input-wrapper': 'step-client__input-wrapper',
+                    'class-input-value': 'step-client__input-value',
+                    'class-input-placeholder': '',
+                    'value': '',
+                    'placeholder': 'Дата рождения',
+                    'name': 'date-birthday',
+                    'type': 'text',
+                    'required': 'true'
+                })
+                @@include('../../UI/files/input-placeholder.html', {
+                    'class-input-wrapper': 'step-client__input-wrapper',
+                    'class-input-value': 'step-client__input-value',
+                    'class-input-placeholder': '',
+                    'value': '',
+                    'placeholder': 'Мобильный телефон',
+                    'name': 'phone',
+                    'type': 'text',
+                    'required': 'true'
+                })
+                <div class="step-client__input-code">
+                    @@include('../../UI/files/input-placeholder.html', {
+                        'class-input-wrapper': 'step-client__input-wrapper',
+                        'class-input-value': 'step-client__input-value',
+                        'class-input-placeholder': '',
+                        'value': '',
+                        'placeholder': 'Код проумоутера*',
+                        'name': 'code',
+                        'type': 'text',
+                        'required': 'false'
+                    })
+                    <div class="step-client__info-wrapper">
+                        <div class="text text-01-color step-client__info">Если есть</div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            @@include('../../UI/files/line.html', {
+                'class': 'step-client__line',
+            })
+
+            <div class="step-client__btn-wrapper">
+                @@include('../../UI/files/link.html', {
+                    'class-btn': 'step-client__btn bg-primary text-05-color',
+                    'text': 'Далее',
+                    'href': '/step-calc-page.html'
+                })
+            </div>
+        </div>
+    </div>
+</section>
